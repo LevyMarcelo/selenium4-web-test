@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Multi Browser Test" verbose="1" parallel="tests" thread-count="99">
+    <test name="Test execution Chrome">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="br.com.selenium.tests.SearchGoogleTest"/>
+        </classes>
+    </test>
+
+    <test name="Test execution Headless">
+        <parameter name="browser" value="headless"/>
+        <classes>
+            <class name="br.com.selenium.tests.SearchGoogleTest"/>
+        </classes>
+    </test>
+</suite>
