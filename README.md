@@ -14,4 +14,4 @@
 ### Project execution with Gradle:
 * gradle test -Psuite=chrome_test
 * gradle test -Psuite=headless_test
-* gradle test -Psuite=multi_browser_tests
+* gradle test -Psuite=multi_browser_test
