@@ -30,7 +30,7 @@ public class Utils {
         driver.findElement(element).click();
     }
 
-    public String validatelinkText(By element) {
+    public String getText(By element) {
         waitForElement(element);
         return driver.findElement(element).getText();
     }

@@ -22,7 +22,7 @@ public class SearchGooglePage extends Utils {
         click(searchButton);
     }
 
-    public String validateSearchGoogle() {
-        return validatelinkText(linkText);
+    public String getLinkText() {
+        return getText(linkText);
     }
 }

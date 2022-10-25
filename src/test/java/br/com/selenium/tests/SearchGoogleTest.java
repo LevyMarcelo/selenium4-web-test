@@ -12,6 +12,6 @@ public class SearchGoogleTest extends BaseTest {
         SearchGooglePage searchGooglePage = new SearchGooglePage(driver);
         searchGooglePage.fillSearchField("Selenium");
         searchGooglePage.clickSearchButton();
-        assertThat(searchGooglePage.validateSearchGoogle(), is("Downloads - Selenium.dev"));
+        assertThat(searchGooglePage.getLinkText(), is("Downloads - Selenium.dev"));
     }
 }
