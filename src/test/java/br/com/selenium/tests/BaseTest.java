@@ -17,6 +17,10 @@ public class BaseTest {
     public void setup(String browser) {
         if (browser.equalsIgnoreCase("chrome")) {
             chromeDriver();
+        } else if (browser.equalsIgnoreCase("safari")) {
+            safari();
+        } else if (browser.equalsIgnoreCase("firefox")) {
+            firefox();
         } else {
             headless();
         }
@@ -31,6 +35,14 @@ public class BaseTest {
 
     private void chromeDriver() {
         driver = WebDriverManager.chromedriver().create();
+    }
+
+    public void safari() {
+        driver = WebDriverManager.safaridriver().create();
+    }
+
+    public void firefox() {
+        driver = WebDriverManager.firefoxdriver().create();
     }
 
     private void headless() {
