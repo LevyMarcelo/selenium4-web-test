@@ -18,11 +18,11 @@ public class BaseTest {
         if (browser.equalsIgnoreCase("chrome")) {
             chromeDriver();
         } else if (browser.equalsIgnoreCase("safari")) {
-            safari();
+            safariDriver();
         } else if (browser.equalsIgnoreCase("firefox")) {
-            firefox();
+            firefoxdriver();
         } else {
-            headless();
+            chromeDriverHeadless();
         }
         driver.manage().window().maximize();
         driver.get("https://www.google.com.br/");
@@ -37,15 +37,15 @@ public class BaseTest {
         driver = WebDriverManager.chromedriver().create();
     }
 
-    public void safari() {
+    private void safariDriver() {
         driver = WebDriverManager.safaridriver().create();
     }
 
-    public void firefox() {
+    private void firefoxdriver() {
         driver = WebDriverManager.firefoxdriver().create();
     }
 
-    private void headless() {
+    private void chromeDriverHeadless() {
         WebDriverManager.chromedriver().setup();
         ChromeOptions chromeOptions = new ChromeOptions();
         chromeOptions.addArguments("--headless");

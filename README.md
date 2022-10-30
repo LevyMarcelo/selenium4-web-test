@@ -1,7 +1,7 @@
 # selenium4-web-test
 
 ### Language and Frameworks:
-* Java
+* Java 11
 * Selenium 4
 * TestNG
 * Gradle
@@ -13,5 +13,7 @@
 
 ### Project execution with Gradle:
 * gradle test -Psuite=chrome_test
+* gradle test -Psuite=safari_test
+* gradle test -Psuite=firefox_test
 * gradle test -Psuite=headless_test
 * gradle test -Psuite=multi_browser_test

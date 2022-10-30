@@ -9,7 +9,7 @@ public class SearchGoogleTest extends BaseTest {
 
     @Test
     public void searchGoogleTest() {
-        SearchGooglePage searchGooglePage = new SearchGooglePage(driver);
+        var searchGooglePage = new SearchGooglePage(driver);
         searchGooglePage.fillSearchField("Selenium");
         searchGooglePage.clickSearchButton();
         assertThat(searchGooglePage.getLinkText(), is("Downloads - Selenium.dev"));

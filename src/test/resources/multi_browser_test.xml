@@ -7,13 +7,6 @@
         </classes>
     </test>
 
-    <test name="Test execution Headless">
-        <parameter name="browser" value="Headless"/>
-        <classes>
-            <class name="br.com.selenium.tests.SearchGoogleTest"/>
-        </classes>
-    </test>
-
     <test name="Test Execution Safari">
         <parameter name="browser" value="safari"/>
         <classes>
@@ -23,6 +16,13 @@
 
     <test name="Test Execution Firefox">
         <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="br.com.selenium.tests.SearchGoogleTest"/>
+        </classes>
+    </test>
+
+    <test name="Test Execution Headless">
+        <parameter name="browser" value="Headless"/>
         <classes>
             <class name="br.com.selenium.tests.SearchGoogleTest"/>
         </classes>
