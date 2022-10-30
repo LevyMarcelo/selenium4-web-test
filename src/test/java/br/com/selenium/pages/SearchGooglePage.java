@@ -8,7 +8,7 @@ public class SearchGooglePage extends Utils {
 
     private By searchField = By.name("q");
     private By searchButton = By.name("btnK");
-    private By linkText = By.cssSelector("div#rso div > div > div > div > div > div.Z26q7c.UK95Uc.jGGQ5e > div > a > h3");
+    private By linkText = By.cssSelector("h3.LC20lb.MBeuO.DKV0Md");
 
     public SearchGooglePage(WebDriver driver) {
         super(driver);
