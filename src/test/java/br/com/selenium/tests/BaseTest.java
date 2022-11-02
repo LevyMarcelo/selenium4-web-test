@@ -20,7 +20,7 @@ public class BaseTest {
         } else if (browser.equalsIgnoreCase("safari")) {
             safariDriver();
         } else if (browser.equalsIgnoreCase("firefox")) {
-            firefoxdriver();
+            firefoxDriver();
         } else {
             chromeDriverHeadless();
         }
@@ -41,7 +41,7 @@ public class BaseTest {
         driver = WebDriverManager.safaridriver().create();
     }
 
-    private void firefoxdriver() {
+    private void firefoxDriver() {
         driver = WebDriverManager.firefoxdriver().create();
     }
 
