@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Suite Test Headless">
+    <test name="Test Execution Headless">
+        <parameter name="browser" value="headless"/>
+        <classes>
+            <class name="br.com.selenium.tests.SearchGoogleTest"/>
+        </classes>
+    </test>
+</suite>

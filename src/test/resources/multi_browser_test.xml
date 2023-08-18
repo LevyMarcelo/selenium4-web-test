@@ -1,0 +1,30 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Multi Browser Test" parallel="tests" thread-count="4">
+    <test name="Test Execution Chrome">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="br.com.selenium.tests.SearchGoogleTest"/>
+        </classes>
+    </test>
+
+    <test name="Test Execution Safari">
+        <parameter name="browser" value="safari"/>
+        <classes>
+            <class name="br.com.selenium.tests.SearchGoogleTest"/>
+        </classes>
+    </test>
+
+    <test name="Test Execution Firefox">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="br.com.selenium.tests.SearchGoogleTest"/>
+        </classes>
+    </test>
+
+    <test name="Test Execution Headless">
+        <parameter name="browser" value="Headless"/>
+        <classes>
+            <class name="br.com.selenium.tests.SearchGoogleTest"/>
+        </classes>
+    </test>
+</suite>

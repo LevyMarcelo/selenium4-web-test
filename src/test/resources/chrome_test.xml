@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Suite Test Chrome">
+    <test name="Test Execution Chrome">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="br.com.selenium.tests.SearchGoogleTest"/>
+        </classes>
+    </test>
+</suite>
